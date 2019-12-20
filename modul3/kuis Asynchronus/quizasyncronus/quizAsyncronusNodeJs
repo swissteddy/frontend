@@ -1,0 +1,35 @@
+let hasil = 0;
+let error = null;
+
+async function asyncPromises() {
+    const PROMISE_A = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            hasil = 1 + 1;
+            if (hasil === 0) reject("error");
+            resolve(hasil);
+        }, 200);
+    });
+
+    const PROMISE_B = new Promise((resolve, reject) => {
+        hasil = 2 + 2;
+        if (hasil === 0) reject("error");
+        resolve(hasil);
+    });
+
+    const PROMISE_FAIL = new Promise((resolve, reject) => {
+        hasil = 3 * 3;
+        if (hasil === 0) reject("error");
+        resolve(hasil);
+    });
+
+    const RESULT_A = PROMISE_A;
+    const RESULT_B = await PROMISE_B;
+    const RESULT_FAIL = await PROMISE_FAIL;
+
+    console.log(RESULT_A);
+    console.log(RESULT_B);
+    console.log(RESULT_FAIL);
+    console.log(await PROMISE_A);
+}
+
+asyncPromises();

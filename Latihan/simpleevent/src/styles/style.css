@@ -1,0 +1,17 @@
+.imgOn {
+    width:300px;
+    margin:auto;  
+    display:block;  
+  }
+  
+  .imgOff {
+      display:none;
+  }
+  
+  .blueButton {
+    width:100px;
+    background-color:rgba(24, 49, 189, 0.651); 
+    color:#FFFFFF;
+    height:30px;
+    border:0px;
+  }

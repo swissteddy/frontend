@@ -1,0 +1,229 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Babastudio.com</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <style>
+            .myslide {
+                display: none;
+            }
+
+            .slide-container {
+                position:relative;
+            }
+
+            .slide-container button {
+                position:absolute;
+                top:50%;
+                opacity: 0.5;
+                border-radius: 50%;
+            }
+            .slide-container button:last-child {
+                top: 50%;
+                right: 0%;
+            }
+
+            .slide-container{
+                height: 450px;
+                width: 100%;
+            }
+
+            .slide-container img{
+                border-radius: 5px;
+            }
+
+            .container-section{
+                background-color: red ;
+            }
+            h1 {
+                padding: 9px 0px 9px 18px;
+                font-size: 20px;
+                font-weight: lighter;
+                color:whitesmoke;
+            }
+            .container{
+                min-height: 600px;
+                width: 100%;
+                border-radius: 5px;
+                padding-bottom: 20px;
+            }
+
+            h2,
+            p{
+                letter-spacing: 1px;
+                margin: 0;
+                line-height: 1.5;
+                text-align: justify;
+            }
+
+            a{
+                color: black;
+            }
+
+            button{
+                margin-top: 10px;
+                letter-spacing: 1px;
+                padding: 9px 18px;
+            }
+
+            section{
+                margin-bottom:40px;
+            }
+
+            #section1,
+            #section2,
+            #section3{
+                overflow: hidden;
+            }
+
+            #section1 img,
+            #section2 img,
+            #section3 img{
+                display: block;
+                float: left;
+                margin-right: 100px;
+            }
+
+            #section1 article,
+            #section2 article,
+            #section3 article{
+                display: block;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id ="topline"></div>
+        <div class="wrapper">
+            <!-- start header-->
+            <header>
+                <section id="logobaba">
+                    <a href="#"><img src="images/logo_baba.png"></a>
+                </section>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="services.html">Service</a></li>
+                        <li><a href="gallerys.html">Galery</a></li>
+                        <li><a href="contacts.html">Contact</a></li>                        
+                    </ul>
+                </nav>
+            </header>
+            <!--End Header-->
+
+            <!--Start Slide-->
+            <section id="slide">
+                <div class="slide-container">
+                    <img class="myslide" src="images/slider_1.png">
+                    <img class="myslide" src="images/slider_2.png">
+                    <img class="myslide" src="images/slider_3.png">
+                    <button class="buttonleft" onclick="plusDivs(-1)">&#10096;</button>
+                    <button class="buttonright" onclick="plusDivs(1)">&#10097;</button>
+                </div>
+            </section>
+            <!--End Slide-->
+
+            <!--start main-->
+            <main>
+                <div class="container">
+                    <header>
+                        <div class="container-section">
+                            <h1>About US</h1>
+                        </div>
+                    </header>
+                    <section id="section1">
+                        <img src="images/templatemo_image_1.jpg">
+                        <article>
+                            <header>
+                                <h2>
+                                        CONTENT
+                                </h2>
+                            </header>
+                                <p> min-height : 600px;
+                                    - width : 100% (sesuai dengan lebar container 1150px)
+                                    - Jangan lupa di border radius 5px
+                                    - Padding bottom 20px;
+                                    Didalam content terbagi 3 section 
+                                    (Jangan lupa menggunakan class) 
+                                    yang berisi Image (img),paragraf (p), dan link readmore
+                                    </p>
+                                <button><a href="#">read more</a></button>
+                        </article>
+                    </section>
+
+                    <section id="section1">
+                            <img src="images/templatemo_image_2.jpg">
+                            <article>
+                                <header>
+                                    <h2>
+                                            CONTENT
+                                    </h2>
+                                </header>
+                                    <p> min-height : 600px;
+                                        - width : 100% (sesuai dengan lebar container 1150px)
+                                        - Jangan lupa di border radius 5px
+                                        - Padding bottom 20px;
+                                        Didalam content terbagi 3 section 
+                                        (Jangan lupa menggunakan class) 
+                                        yang berisi Image (img),paragraf (p), dan link readmore
+                                        </p>
+                                    <button><a href="#">read more</a></button>
+                            </article>
+                    </section>
+
+                    <section id="section1">
+                            <img src="images/templatemo_image_3.jpg">
+                            <article>
+                                <header>
+                                    <h2>
+                                            CONTENT
+                                    </h2>
+                                </header>
+                                    <p> min-height : 600px;
+                                        - width : 100% (sesuai dengan lebar container 1150px)
+                                        - Jangan lupa di border radius 5px
+                                        - Padding bottom 20px;
+                                        Didalam content terbagi 3 section 
+                                        (Jangan lupa menggunakan class) 
+                                        yang berisi Image (img),paragraf (p), dan link readmore
+                                        </p>
+                                    <button><a href="#">read more</a></button>
+                            </article>
+                    </section>
+                </div>
+            </main>
+            <!--end main-->
+
+            <footer>
+                <!--start footer-->
+                <div class="footer">
+                        <p>&copy; Babastudio 2019</p>
+                </div>
+                <!--end footer-->
+            </footer>
+        </div>
+
+        <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+        
+                function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                }
+        
+                function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("myslide");
+                    if (n > x.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = x.length }
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    x[slideIndex - 1].style.display = "block";
+                }
+            </script>
+    
+    </body>
+</html>

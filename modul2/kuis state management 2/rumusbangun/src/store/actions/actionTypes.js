@@ -1,0 +1,6 @@
+export const UpdateHandler = "UpdateHandler"
+export const BackHandler = "BackHandler"
+export const ButonHandler = "ButtonHandler"
+export const PersegiHanlder = "PersegiHandler"
+export const PersegiPanjangHandler = "PersegiPanjangHandler"
+export const LingkaranHandler = "LingkaranHandler"

@@ -1,0 +1,135 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Babastudio.com</title>
+    <style>
+        .container-section {
+            background-color: red;
+        }
+
+        .container-section h1 {
+            padding: 9px 0px 9px 18px;
+            font-size: 24px;
+            font-weight: lighter;
+            color: whitesmoke;
+        }
+
+        .wrapper-section {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .wrapper-form {
+            margin-bottom: 16px;
+        }
+
+        .container-form {
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        input[type=text],
+        input[type=email] {
+            vertical-align: top;
+            width: 40%;
+            padding: 20px 10px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            padding: 8px;
+            margin-left: 40%;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        textarea {
+            vertical-align: top;
+            padding: 16px 8px;
+            width: 40%;
+        }
+
+        input[type=submit]:hover {
+            background-color: #5762c4;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div id="topline"></div>
+    <div class="wrapper">
+        <!--start header-->
+        <header>
+            <section id="logobaba">
+                <a href="#"><img src="images/logo_baba.png"></a>
+            </section>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallerys.html">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--end header-->
+        <!--start main-->
+        <main>
+            <div class="container">
+                <header>
+                    <div class="container-section">
+                        <h1>Contact</h1>
+                    </div>
+                </header>
+                <section id="wrappermap">
+
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.3808452033463!2d106.79667181410304!3d-6.213399962588246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f6b17226947b%3A0x8bc95cb7abac594c!2sDILo%20Kemenpora!5e0!3m2!1sid!2sid!4v1571234906872!5m2!1sid!2sid" 
+                        width="1150" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+
+                </section>
+                <div class="container-form">
+                    <form action="" method="get" class="form-example">
+                        <div class="wrapper-form">
+                            <label for="name">Name<span class="tab">: </span></label>
+                            <input type="text" name="name" id="name" placeholder="name" required>
+                        </div>
+                        <div class="wrapper-form">
+                            <label for="email">Email<span class="tab">: </span></label>
+                            <input type="email" name="email" id="email" placeholder="email" required>
+                        </div>
+                        <div class="wrapper-form">
+                            <label for="subject">Subject<span class="tab">: </span></label>
+                            <input type="text" name="subject" id="subject" placeholder="subject" required>
+                        </div>
+                        <div class="wrapper-form">
+                            <label for="message">Message<span class="tab">: </span></label>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="message"></textarea>
+                        </div>
+                        <div class="wrapper-form">
+                            <input type="submit" value="SEND">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <!--end main-->
+        <footer>
+                <!--start footer-->
+                <div class="footer">
+                        <p>&copy; Babastudio 2019</p>
+                </div>
+                <!--end footer-->
+        </footer>
+    </div>
+
+</body>
+
+</html>
